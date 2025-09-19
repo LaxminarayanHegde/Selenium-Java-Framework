@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Negative Test Suite">
+	
+	<groups>
+		<run>
+			<include name = "NegativeTest"/>
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="WebAutomationTests.TestComponents.Listeners" />
+	</listeners>
+	
+  <test thread-count="2" name="Login Negative Test">
+    <classes>
+      <class name="WebAutomationTests.tests.NegativeTests"/>
+      <class name="WebAutomationTests.tests.StandAloneTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

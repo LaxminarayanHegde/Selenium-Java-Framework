@@ -1,0 +1,5 @@
+WebAutomationTests/TestComponents/BaseTest.class
+WebAutomationTests/tests/NegativeTests.class
+WebAutomationTests/tests/StandAloneTest.class
+WebAutomationTests/TestComponents/RetryTest.class
+WebAutomationTests/TestComponents/Listeners.class

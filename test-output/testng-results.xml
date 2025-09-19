@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="5" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-18T17:28:18 IST" name="Negative Test Suite" finished-at="2025-09-18T17:28:37 IST" duration-ms="18696">
+    <groups>
+      <group name="Regression">
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyEmailIdField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+      </group> <!-- Regression -->
+      <group name="NegativeTest">
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyEmailIdField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" name="loginValidationWithEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+      </group> <!-- NegativeTest -->
+    </groups>
+    <test started-at="2025-09-18T17:28:18 IST" name="Login Negative Test" finished-at="2025-09-18T17:28:37 IST" duration-ms="18696">
+      <class name="WebAutomationTests.tests.NegativeTests">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:18 IST" name="launchApplication" finished-at="2025-09-18T17:28:22 IST" duration-ms="3453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:22 IST" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" finished-at="2025-09-18T17:28:22 IST" duration-ms="370" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [*Email is required ] but found [*Email is required]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [*Email is required ] but found [*Email is required]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at webAutomation.pageObjects.LandingPage.validateEmptyEmailIdAndEmptyPasswordField(LandingPage.java:43)
+at WebAutomationTests.tests.NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField(NegativeTests.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyEmailIdAndEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:22 IST" name="tearDown" finished-at="2025-09-18T17:28:22 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:22 IST" name="launchApplication" finished-at="2025-09-18T17:28:27 IST" duration-ms="5059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:27 IST" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" finished-at="2025-09-18T17:28:28 IST" duration-ms="62" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [*Email is required ] but found [*Email is required]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [*Email is required ] but found [*Email is required]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at webAutomation.pageObjects.LandingPage.validateEmptyEmailIdAndEmptyPasswordField(LandingPage.java:43)
+at WebAutomationTests.tests.NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField(NegativeTests.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyEmailIdAndEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:28 IST" name="tearDown" finished-at="2025-09-18T17:28:28 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:28 IST" name="launchApplication" finished-at="2025-09-18T17:28:31 IST" duration-ms="3190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:31 IST" name="loginValidationWithEmptyEmailIdField" finished-at="2025-09-18T17:28:33 IST" duration-ms="1882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyEmailIdField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:33 IST" name="tearDown" finished-at="2025-09-18T17:28:33 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:33 IST" name="launchApplication" finished-at="2025-09-18T17:28:37 IST" duration-ms="3544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:37 IST" name="loginValidationWithEmptyPasswordField" finished-at="2025-09-18T17:28:37 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@48e92c5c]" started-at="2025-09-18T17:28:37 IST" name="tearDown" finished-at="2025-09-18T17:28:37 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WebAutomationTests.tests.NegativeTests -->
+    </test> <!-- Login Negative Test -->
+  </suite> <!-- Negative Test Suite -->
+</testng-results>

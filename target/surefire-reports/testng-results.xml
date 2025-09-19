@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-19T14:56:23 IST" name="Regression Test Suite" finished-at="2025-09-19T15:36:21 IST" duration-ms="2398309">
+    <groups>
+      <group name="Regression">
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyEmailIdField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="StandAloneTest.loginValidations(java.util.HashMap)[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" name="loginValidations" class="WebAutomationTests.tests.StandAloneTest"/>
+      </group> <!-- Regression -->
+      <group name="NegativeTest">
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyEmailIdField" class="WebAutomationTests.tests.NegativeTests"/>
+        <method signature="NegativeTests.loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" name="loginValidationWithEmptyPasswordField" class="WebAutomationTests.tests.NegativeTests"/>
+      </group> <!-- NegativeTest -->
+      <group name="Smoke">
+        <method signature="StandAloneTest.loginValidations(java.util.HashMap)[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" name="loginValidations" class="WebAutomationTests.tests.StandAloneTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-09-19T14:56:23 IST" name="Login Test" finished-at="2025-09-19T15:36:21 IST" duration-ms="2398309">
+      <class name="WebAutomationTests.tests.NegativeTests">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T14:56:23 IST" name="launchApplication" finished-at="2025-09-19T15:21:22 IST" duration-ms="1498533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyEmailIdAndEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:22 IST" name="loginValidationWithEmptyEmailIdAndEmptyPasswordField" finished-at="2025-09-19T15:21:22 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyEmailIdAndEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:22 IST" name="tearDown" finished-at="2025-09-19T15:21:22 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:22 IST" name="launchApplication" finished-at="2025-09-19T15:21:27 IST" duration-ms="5225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyEmailIdField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:27 IST" name="loginValidationWithEmptyEmailIdField" finished-at="2025-09-19T15:21:27 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyEmailIdField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:27 IST" name="tearDown" finished-at="2025-09-19T15:21:28 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:28 IST" name="launchApplication" finished-at="2025-09-19T15:21:33 IST" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidationWithEmptyPasswordField()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:33 IST" name="loginValidationWithEmptyPasswordField" finished-at="2025-09-19T15:21:33 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidationWithEmptyPasswordField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.NegativeTests@2e3967ea]" started-at="2025-09-19T15:21:33 IST" name="tearDown" finished-at="2025-09-19T15:21:33 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WebAutomationTests.tests.NegativeTests -->
+      <class name="WebAutomationTests.tests.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:21:33 IST" name="launchApplication" finished-at="2025-09-19T15:21:38 IST" duration-ms="5150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidations(java.util.HashMap)[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:21:38 IST" name="loginValidations" data-provider="getData" finished-at="2025-09-19T15:21:39 IST" duration-ms="786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Testautomation@123, emailId=testautomation2@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:21:39 IST" name="tearDown" finished-at="2025-09-19T15:21:39 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:21:39 IST" name="launchApplication" finished-at="2025-09-19T15:36:20 IST" duration-ms="880776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginValidations(java.util.HashMap)[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:36:20 IST" name="loginValidations" data-provider="getData" finished-at="2025-09-19T15:36:21 IST" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Testautomation@123, emailId=testautomation3@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WebAutomationTests.tests.StandAloneTest@2892d68]" started-at="2025-09-19T15:36:21 IST" name="tearDown" finished-at="2025-09-19T15:36:21 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WebAutomationTests.tests.StandAloneTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Regression Test Suite -->
+</testng-results>
