@@ -16,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.BeforeMethod;
 
@@ -36,6 +37,7 @@ public class BaseTest {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		String isHeadless = System.getProperty("headless") != null ?  System.getProperty("headless") : prop.getProperty("headless");
 		ChromeOptions options = new ChromeOptions();
+		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
@@ -47,7 +49,11 @@ public class BaseTest {
 		}
 		
 		else if(browserName.equalsIgnoreCase("fireFox")) {
-			driver = new FirefoxDriver();
+			if(isHeadless.equals("true")) {
+				firefoxOptions.addArguments("headless");
+			}
+			driver = new FirefoxDriver(firefoxOptions);
+		
 		}
 		
 		else if(browserName.equalsIgnoreCase("Edge")) {
