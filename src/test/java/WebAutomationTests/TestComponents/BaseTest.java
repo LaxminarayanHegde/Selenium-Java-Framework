@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
@@ -38,7 +39,7 @@ public class BaseTest {
 		String isHeadless = System.getProperty("headless") != null ?  System.getProperty("headless") : prop.getProperty("headless");
 		ChromeOptions options = new ChromeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
-		
+		EdgeOptions edgeOptions = new EdgeOptions();
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			if(isHeadless.equals("true")) {
@@ -57,6 +58,9 @@ public class BaseTest {
 		}
 		
 		else if(browserName.equalsIgnoreCase("Edge")) {
+			if(isHeadless.equals("true")) {
+				edgeOptions.addArguments("headless");
+			}
 			driver = new EdgeDriver();
 		
 		}
