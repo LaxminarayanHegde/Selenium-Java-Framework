@@ -37,6 +37,8 @@ public class BaseTest {
 		prop.load(fis);
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		String isHeadless = System.getProperty("headless") != null ?  System.getProperty("headless") : prop.getProperty("headless");
+		
+		//Browser options created for respective browsers
 		ChromeOptions options = new ChromeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 		EdgeOptions edgeOptions = new EdgeOptions();
